@@ -1,0 +1,10 @@
+# Compiled binaries (no extension, built from .cpp)
+LinkedList/linkedlist
+Stack_CircularQueue/Stack
+Vector/vector
+
+# Debug symbol bundles
+*.dSYM/
+
+# macOS
+.DS_Store

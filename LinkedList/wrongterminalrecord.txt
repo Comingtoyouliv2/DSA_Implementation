@@ -1,0 +1,387 @@
+(base) wchoi@Wonjaeui-Macmini / % "enter program name, for example /Users/wchoi/Desktop/CPPLearn/a.out"
+zsh: no such file or directory: enter program name, for example /Users/wchoi/Desktop/CPPLearn/a.out
+(base) wchoi@Wonjaeui-Macmini / % g++ --version
+^C
+(base) wchoi@Wonjaeui-Macmini / % clang++ --version
+Apple clang version 16.0.0 (clang-1600.0.26.6)
+Target: arm64-apple-darwin23.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+(base) wchoi@Wonjaeui-Macmini / % clang+= -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+zsh: command not found: -std=c++23
+(base) wchoi@Wonjaeui-Macmini / % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+clang++: error: no such file or directory: 'linkedlist.cpp'
+clang++: error: no input files
+(base) wchoi@Wonjaeui-Macmini / % /CPPLEARN 
+zsh: no such file or directory: /CPPLEARN
+(base) wchoi@Wonjaeui-Macmini / % /Desktop/CPPLEARN
+zsh: no such file or directory: /Desktop/CPPLEARN
+(base) wchoi@Wonjaeui-Macmini / % cd /Users/wchoi/Desktop/CPPLearn 
+(base) wchoi@Wonjaeui-Macmini CPPLearn % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+clang++: error: no such file or directory: 'linkedlist.cpp'
+clang++: error: no input files
+(base) wchoi@Wonjaeui-Macmini CPPLearn % ls
+LinkedList
+(base) wchoi@Wonjaeui-Macmini CPPLearn % cd /LinkedList
+cd: no such file or directory: /LinkedList
+(base) wchoi@Wonjaeui-Macmini CPPLearn % ls
+LinkedList
+(base) wchoi@Wonjaeui-Macmini CPPLearn % cd LinkedList
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+linkedlist.cpp:29:15: warning: unused variable 'curr' [-Wunused-variable]
+   29 |         Node* curr = head;
+      |               ^~~~
+linkedlist.cpp:175:13: warning: unused variable 'i' [-Wunused-variable]
+  175 |         int i = 0;
+      |             ^
+linkedlist.cpp:221:16: error: reference to non-static member function must be called; did you mean to call it with no arguments?
+  221 |         return size == 0;
+      |                ^~~~
+      |                    ()
+2 warnings and 1 error generated.
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist
+[1] empty/size OK
+Assertion failed: (list.get(0) == 5), function main, file linkedlist.cpp, line 255.
+zsh: abort      ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist
+[1] empty/size OK
+5
+10
+20
+30
+Assertion failed: (list.get(0) == 5), function main, file linkedlist.cpp, line 256.
+zsh: abort      ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5
+10
+20
+30
+Assertion failed: (list.get(1) == 10), function main, file linkedlist.cpp, line 259.
+zsh: abort      ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A%                                                                                                                                                                      
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5
+10
+20
+30
+[2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A%                                                                                                                                                                      
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+linkedlist.cpp:93:17: error: use of undeclared identifier 'prev'
+   93 |                 prev = prev->next;
+      |                 ^
+linkedlist.cpp:93:24: error: use of undeclared identifier 'prev'
+   93 |                 prev = prev->next;
+      |                        ^
+linkedlist.cpp:94:17: error: use of undeclared identifier 'curr'
+   94 |                 curr = curr->next; // curr 은 target 지점에 대해 보여준다
+      |                 ^
+linkedlist.cpp:94:24: error: use of undeclared identifier 'curr'
+   94 |                 curr = curr->next; // curr 은 target 지점에 대해 보여준다
+      |                        ^
+linkedlist.cpp:97:13: error: use of undeclared identifier 'prev'; did you mean 'std::prev'?
+   97 |             prev->next = newNode;
+      |             ^~~~
+      |             std::prev
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: 'std::prev' declared here
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+linkedlist.cpp:97:13: error: reference to overloaded function could not be resolved; did you mean to call it?
+   97 |             prev->next = newNode;
+      |             ^~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:29:1: note: possible target for call
+   29 | prev(_InputIter __x, typename iterator_traits<_InputIter>::difference_type __n = 1) {
+      | ^
+linkedlist.cpp:98:29: error: use of undeclared identifier 'curr'
+   98 |             newNode->next = curr; // 이러면 들어감
+      |                             ^
+7 errors generated.
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A%                                                                                                                                                                      
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+5 10 20 30 1 5 10 20 30 1 5 7 10 20 30 [3] insert OK
+^C
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A%                                                                                                                                                                      
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+1 5 7 10 20 30 99 [3] insert OK
+^C
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+1 5 7 10 20 30 99 [3] insert OK
+^C
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+1 5 7 10 20 30 99 [3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+1 5 7 10 20 30 99 [3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+5 10 20 30 [2] push_back/push_front/get OK
+1 5 7 10 20 30 99 [3] insert OK
+[4] indexOf/contains OK
+5 7 10 20 30 0 [5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+1 5 7 10 20 30 99 [4] indexOf/contains OK
+5 7 10 20 30 0 [5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % 
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+1 5 7 10 20 30 99 [4] indexOf/contains OK
+5 7 10 20 30 99 5 7 10 20 30 0 [5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+1 5 7 10 20 30 99 [4] indexOf/contains OK
+5 7 10 20 30 99 5 7 10 20 30 0 [5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlsit
+zsh: no such file or directory: ./linkedlsit
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+1 5 7 10 20 30 99 [4] indexOf/contains OK
+5 7 10 20 30 99 5 7 10 20 30 0 [5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+1 
+5 
+7 
+10 
+20 
+30 
+99 
+[4] indexOf/contains OK
+5 
+7 
+10 
+20 
+30 
+99 
+5 
+7 
+10 
+20 
+30 
+[5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+5 
+7 
+10 
+20 
+30 
+[5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+5 
+7 
+10 
+20 
+30 
+[5] pop_front/pop_back OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+5 
+7 
+10 
+20 
+30 
+[5] pop_front/pop_back OK
+[6] erase OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+[6] erase OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+^[[A^[[A%                                                                                                                                                                  
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+7 
+10 
+[6] erase OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+7 
+10 
+[6] erase OK
+10 
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+7 
+10 
+[6] erase OK
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+7 
+10 
+[6] erase OK
+10 
+zsh: segmentation fault  ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+7 
+10 
+[6] erase OK
+10 
+0 
+[7] single-element edge OK
+Assertion failed: (list.empty() == true), function main, file linkedlist.cpp, line 339.
+zsh: abort      ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+[6] erase OK
+[7] single-element edge OK
+1 
+2 
+3 
+Assertion failed: (list.empty() == true), function main, file linkedlist.cpp, line 337.
+zsh: abort      ./linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % clang++ -std=c++23 -Wall -Wextra -g linkedlist.cpp -o linkedlist
+(base) wchoi@Wonjaeui-Macmini LinkedList % ./linkedlist                                                    
+[1] empty/size OK
+[2] push_back/push_front/get OK
+[3] insert OK
+[4] indexOf/contains OK
+[5] pop_front/pop_back OK
+[6] erase OK
+[7] single-element edge OK
+1 
+2 
+3 
+[8] clear/reuse OK
+
+모든 테스트 통과!
+(base) wchoi@Wonjaeui-Macmini LinkedList % 

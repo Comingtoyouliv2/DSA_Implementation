@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++23 build (current file)",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++23",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "clang++ -std=c++23 로 현재 열린 .cpp 파일 컴파일"
+        }
+    ]
+}

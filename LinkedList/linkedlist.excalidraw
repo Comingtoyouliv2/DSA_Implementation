@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "uP22V_avg_ACBBnpFJk5o",
+      "type": "text",
+      "x": 275.625,
+      "y": 129.578125,
+      "width": 478.39959716796875,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": null,
+      "seed": 2081773783,
+      "version": 248,
+      "versionNonce": 1907906489,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1781913158304,
+      "link": null,
+      "locked": false,
+      "text": "1. Always think pointer availability before using it\n   1-1) If nullptr, then initialize to something\n2. Think about Edge Case first \n3. ",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1. Always think pointer availability before using it\n   1-1) If nullptr, then initialize to something\n2. Think about Edge Case first \n3. ",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

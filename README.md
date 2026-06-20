@@ -1,2 +1,3 @@
 # DSA_Implementation
-To strengthen the fundamentals of DSA, w/o AI just practicing 
+To strengthen the fundamentals of DSA, 
+lol only commit/push is done by AI

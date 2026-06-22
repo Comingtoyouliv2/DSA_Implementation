@@ -1,6 +1,7 @@
 # Compiled binaries (no extension, built from .cpp)
 LinkedList/linkedlist
 Stack_CircularQueue/Stack
+Stack_CircularQueue/circularqueue
 Vector/vector
 
 # Debug symbol bundles
